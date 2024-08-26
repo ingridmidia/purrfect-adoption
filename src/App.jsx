@@ -1,5 +1,14 @@
+import { Button } from "@/components/ui/button";
+
 function App() {
-  return <p>test</p>;
+  return (
+    <>
+      <div>
+        <Button variant="outline">Click me</Button>
+      </div>
+      <p>test</p>
+    </>
+  );
 }
 
 export default App;
