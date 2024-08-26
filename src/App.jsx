@@ -1,12 +1,13 @@
-import { Button } from "@/components/ui/button";
+import NavBar from "./components/NavBar";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <div>
-        <Button variant="outline">Click me</Button>
-      </div>
-      <p>test</p>
+      <NavBar />
+      <main className="mt-24">
+        <Outlet />
+      </main>
     </>
   );
 }
