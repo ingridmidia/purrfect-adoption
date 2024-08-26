@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 import Home from "./components/Home.jsx";
 import AdoptionGuide from "./components/AdoptionGuide.jsx";
+import Resources from "./components/Resources.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/adoption-guide",
         element: <AdoptionGuide />,
+      },
+      {
+        path: "/resources",
+        element: <Resources />,
       },
     ],
   },

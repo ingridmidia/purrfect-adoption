@@ -16,12 +16,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-function Home() {
+export default function Home() {
   const images = [one, two, three, four, five, six];
 
   return (
     <>
-      <div className="bg-violet-100 flex flex-col md:flex-row items-center">
+      <div className="bg-violet-50 flex flex-col md:flex-row items-center">
         <img src={banner} alt="banner" className="md:w-[30%]" />
         <h1 className="text-center text-violet-800 m-1 text-lg md:text-3xl lg:text-6xl font-bold">
           Unlock the Secrets to a Successful Cat Adoption!
@@ -30,7 +30,7 @@ function Home() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center items-center">
         <div className="border border-2 border-violet-800 rounded-xl m-4">
           <h2 className="p-6 leading-relaxed text-lg md:text-2xl">
-            Welcome to Puurdect Adoption, the best guide on cat adoption.
+            Welcome to Puurfect Adoption, the best guide on cat adoption.
             Whether you're a first-time cat parent or looking to add another
             furry friend to your family, we're here to help you navigate the
             journey. Discover expert advice, practical tips, and heartwarming
@@ -71,5 +71,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

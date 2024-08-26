@@ -4,13 +4,13 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <main className="mt-32 md:mt-16 mb-8">
-        <Outlet />
-      </main>
-      <Footer />
-    </>
+      <div className="min-h-screen bg-zinc-50">
+        <NavBar />
+        <main className="mt-32 md:mt-16 mb-8">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
   );
 }
 
