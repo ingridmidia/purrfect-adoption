@@ -7,7 +7,6 @@ import four from "../assets/4.jpg";
 import five from "../assets/5.jpg";
 import six from "../assets/6.jpg";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -16,6 +15,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Quiz from "./Quiz";
 
 export default function Home() {
   const [catImage, setCatImage] = useState(banner);
@@ -40,18 +40,21 @@ export default function Home() {
   return (
     <>
       <div className="bg-violet-50 flex flex-col lg:flex-row items-center relative">
-        <div className="relative lg:w-[35%]">
-          <img src={catImage} alt="banner" className="w-full" />
+        <div className="relative lg:w-[35%] flex items-center justify-center">
+          <img src={catImage} alt="banner" className="object-contain h-80" />
           <Button
-            className="absolute inset-0 top-[92%] lg:top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-violet-300 rounded-full hover:bg-violet-100 text-lg md:text-xl xl:text-2xl w-[75%]"
+            className="absolute inset-0 top-[92%] lg:top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-violet-300 rounded-full hover:bg-violet-100 text-lg md:text-xl xl:text-2xl"
             onClick={fetchCatImage}
           >
-            Change the cat
+            See a New Cat
           </Button>
         </div>
-        <h1 className="text-center text-violet-800 m-1 text-lg md:text-3xl lg:text-6xl font-bold">
-          Unlock the Secrets to a Successful Cat Adoption!
-        </h1>
+        <div className="flex flex-col p-4 items-center lg:w-[65%]">
+          <h1 className="text-violet-800 mb-8 text-lg md:text-xl lg:text-6xl font-bold">
+            Thinking about adopting a cat?
+          </h1>
+          <Quiz />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center items-center lg:p-6">
@@ -64,11 +67,6 @@ export default function Home() {
             stories that will make your adoption experience as smooth and
             rewarding as possible.
           </h2>
-          <Link to="/adoption-guide" className="flex justify-center p-4">
-            <Button className="bg-violet-300 hover:bg-violet-100 rounded-full text-lg md:text-2xl">
-              View Our Adoption Guide
-            </Button>
-          </Link>
         </div>
 
         <div className="flex justify-center items-center">
@@ -98,3 +96,4 @@ export default function Home() {
     </>
   );
 }
+ 
