@@ -7,7 +7,7 @@ export default function NavBar() {
       <Link to="/" className="flex h-24 md:h-16 items-center justify-center">
         <img src={logo} alt="Logo" className="w-10 h-10 md:w-12 md:h-12 mr-2" />
         <span className="text-xl md:text-3xl text-violet-800">
-          Puurfect Adoption
+          Purrfect Adoption
         </span>
       </Link>
       <div className="flex space-x-4 mb-2 md:mb-0 justify-center md:ml-auto md:items-center">

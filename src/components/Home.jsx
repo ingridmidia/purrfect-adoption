@@ -57,7 +57,7 @@ export default function Home() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center items-center lg:p-6">
         <div className="border border-2 border-violet-800 rounded-xl m-4">
           <h2 className="p-6 leading-relaxed text-lg md:text-2xl">
-            Welcome to Puurfect Adoption, the best guide on cat adoption.
+            Welcome to Purrfect Adoption, the best guide on cat adoption.
             Whether you're a first-time cat parent or looking to add another
             furry friend to your family, we're here to help you navigate the
             journey. Discover expert advice, practical tips, and heartwarming
