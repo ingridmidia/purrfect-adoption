@@ -9,7 +9,7 @@ export default function Resources() {
           <li>
             <a
               href="https://www.aspcapetinsurance.com/resources/how-to-introduce-a-cat-to-a-new-home/"
-              className="hover:underline"
+              className="hover:underline hover:text-violet-500  lg:text-lg"
             >
               How to Introduce a Cat to a New Home (ASPCA)
             </a>
@@ -17,7 +17,7 @@ export default function Resources() {
           <li>
             <a
               href="https://bestfriends.org/stories/features/introducing-cats-each-other"
-              className="hover:underline"
+              className="hover:underline hover:text-violet-500  lg:text-lg"
             >
               Introducing Cats to Each Other (Best Friends Animal Society)
             </a>
@@ -25,17 +25,16 @@ export default function Resources() {
           <li>
             <a
               href="https://www.oregonhumane.org/wp-content/uploads/5.31.17_-Introducing-a-new-cat-to-resident-pets.pdf"
-              className="hover:underline"
+              className="hover:underline hover:text-violet-500  lg:text-lg"
             >
               Introducing a New Cat to Resident Pets (The Humane Society of the
               United States)
             </a>
           </li>
-
           <li>
             <a
               href="https://www.avma.org/"
-              className="hover:underline"
+              className="hover:underline hover:text-violet-500  lg:text-lg"
             >
               American Veterinary Medical Association
             </a>
@@ -43,7 +42,7 @@ export default function Resources() {
           <li>
             <a
               href="https://www.petmd.com/"
-              className="hover:underline"
+              className="hover:underline hover:text-violet-500  lg:text-lg"
             >
               PetMD
             </a>
@@ -51,7 +50,7 @@ export default function Resources() {
           <li>
             <a
               href="https://www.petfinder.com/"
-              className="hover:underline"
+              className="hover:underline hover:text-violet-500  lg:text-lg"
             >
               Petfinder
             </a>
